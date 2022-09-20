@@ -1,0 +1,9 @@
+[package]
+name = "polloi-tcp"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+c = { version = "0.2", package = "libc" }
+mio = { version = "0.8", features = ["os-poll", "net"] }
+futures = "0.3.21"
